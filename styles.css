@@ -66,13 +66,12 @@ body {
   /* overflow: hidden; */
   color: var(--font-color);
 }
-h1,
-h2,
-h3 {
+
+h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
 }
 h1 {
-  font-size: 60px;
+  font-size: 3.125vw; /* 60px */
   color: var(--headline-color);
   animation: fadeInLeft 1s ease;
 }
@@ -89,7 +88,7 @@ a {
 }
 p {
   color: var(--font-color);
-  font-size: 25px;
+  font-size: 1.302vw; /* 25px */
   line-height: 1.7rem;
   text-align: left;
 }
@@ -263,7 +262,7 @@ main hr {
 }
 
 .repository-container p {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 /* Repo Head */
@@ -351,7 +350,7 @@ main hr {
 footer {
   background-color: #333; /* Dark background for contrast */
   color: #fff; /* White text for readability */
-  padding: 20px;
+  padding: 20px; /* 20 px */
   text-align: center;
 }
 
@@ -386,6 +385,16 @@ footer {
 
 /* MEDIA QUERIES */
 
+/* FOR PHONE */
+@media screen and (max-width: 768px) {
+  p {
+    color: var(--font-color);
+    font-size: 3vw; /* 25px */
+    line-height: 1.7rem;
+    text-align: center;
+  }
+}
+
 /* FOR TABLET */
 @media screen and (min-width: 768px) {
   /* add margin left and rigth make it centered */
@@ -397,9 +406,10 @@ footer {
   #about,
   #project,
   nav ul {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
+
 }
 /* FOR DESKTOP */
 @media screen and (min-width: 1025px) {
